@@ -125,19 +125,11 @@ section.lista {
         font-size: 50pt;
     }
 
-    .cancion {
-        text-decoration: none;
-    padding: 10px 1rem;
-    color: #FFFFFF;
-    font-weight: bold;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+   
 
-    }
 .title_reproductor {
     text-decoration: none;
-    padding: 10px 1rem;
+    padding: 10px;
     color: #FFFFFF;
     font-weight: bold;
     display: flex;
@@ -151,11 +143,45 @@ section.lista {
 	text-decoration: underline;
 }
 
-img.img_music1 {
-  
-    width: 100px;
-    height: 100px;
-   
+.listas_canciones .cancion {
+
+    text-decoration: none;
+    padding: 10px 1rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
 
 }
 
+.listas_canciones .autor {
+
+    text-decoration: none;
+    padding: 10px 1rem;
+    color: #FFFFFF;
+    font-weight: normal;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+
+}
+
+.listas_canciones .tiempo {
+
+    text-decoration: none;
+    padding: 10px;
+    color: #FFFFFF;
+    font-weight: normal;
+    display: flex;
+    justify-content: flex-start;
+    align-items: safe;
+
+}
+
+.listas_canciones .img {
+
+    border-radius: 2em;
+  padding: 7px;
+
+}
