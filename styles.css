@@ -50,20 +50,17 @@ main {
     display: flex;
     overflow-x: hidden;
 }
-.container{
-    position: relative;
+
+aside.container {
     width: 60%;
     height: 60%;
+    position: relative;
+    background-color: #be245f;
     display: flex;
+    padding: var(--padding);
     overflow-x: hidden;
 }
-.container aside{
-    width: 50%;
-    height: 100vh;
-    background-color: #be245f;
-    padding: var(--padding);
-}
-.container aside .menu{
+aside.container .menu{
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -77,23 +74,15 @@ main {
     justify-content: flex-start;
     align-items: safe;
 }
-.container aside .menu a span{
-    margin-right: 8px;
-}
 
 .logo {
-    display: flex;
-    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+    display: flow-root;
+justify-content: center;
+}
 
-}
-.container aside .menu {
-    background-color: transparent;
-    border-radius: 5px;
-    color: #ffffff;
-}
-.container aside .menu {
-    color: #ffffff;
-}
+
 
 /* ----------------------------------------------------------------------
 -----------------------conteiner----------------------------------------- 
@@ -117,45 +106,28 @@ section.lista {
     width: 100%;
 
     }
-
+/*
     .listas_canciones {
         background-color: transparent;
         border-radius: 5px;
         color: #ffffff;
         font-size: 50pt;
-    }
+    }*/
 
    
 
-.title_reproductor {
+section.lista .title_reproductor {
     text-decoration: none;
     padding: 10px;
     color: #FFFFFF;
     font-weight: bold;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
 
-
-.container section .title-playlist:hover {
-	text-decoration: underline;
-}
-
-.listas_canciones .cancion {
-
-    text-decoration: none;
-    padding: 10px 1rem;
-    color: #FFFFFF;
-    font-weight: bold;
-    display: flex;
-    justify-content: flex-start;
-    align-items: left;
-
-}
-
-.listas_canciones .autor {
+section.lista .descripcion {
 
     text-decoration: none;
     padding: 10px 1rem;
@@ -165,9 +137,37 @@ section.lista {
     justify-content: flex-start;
     align-items: left;
 
+   /* margin-left: 30%; */
 }
 
-.listas_canciones .tiempo {
+
+ section.lista .descripcion .cancion {
+
+    text-decoration: none;
+    padding: 10px 1rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+
+}
+
+
+
+
+section.lista .descripcion .autor {
+    text-decoration: none;
+    padding: 10px 1rem;
+    color: #FFFFFF;
+    font-weight: normal;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+}
+
+
+section.lista .descripcion .tiempo {
 
     text-decoration: none;
     padding: 10px;
@@ -176,12 +176,11 @@ section.lista {
     display: flex;
     justify-content: flex-start;
     align-items: safe;
-
 }
 
-.listas_canciones .img {
 
-    border-radius: 2em;
-  padding: 7px;
+section.lista .descripcion .img  {
 
+    width: 100px;
+    height: 100px;
 }
